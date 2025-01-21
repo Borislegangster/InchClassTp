@@ -22,7 +22,31 @@
    </div>    
 
     </div>
-    </form> 
+    </form>
+    
+    <script> 
+        function validation() 
+       { 
+        var id=document.f1.user.value; 
+        var ps=document.f1.pass.value; 
+        if(id.length=="" && ps.length=="") { 
+        alert("les champs: nom de l'utilisateur et mot de passe sont vides"); 
+        return false; 
+        } 
+        else 
+        { 
+        if(id.length=="") { 
+        alert("entrer un nom d'utilisateur"); 
+        return false; 
+        } 
+        if (ps.length=="") { 
+        alert("champ du mot de passe vide");
+        return false; 
+        } 
+        
+     } 
+    } 
+    </script>
 
     <style>    
         body {
